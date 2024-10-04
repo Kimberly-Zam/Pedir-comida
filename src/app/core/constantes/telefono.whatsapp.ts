@@ -1,1 +1,1 @@
-export const numeroWhatsapp = "+59169508295";
+export const numeroWhatsapp = "+59172708420";
