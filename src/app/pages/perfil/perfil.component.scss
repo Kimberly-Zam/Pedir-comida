@@ -1,0 +1,50 @@
+@use "../../../assets/styles/variables.scss";
+
+#contenedor {
+    margin: 100px 50px 10px;
+}
+
+*{
+    font-size: large;
+}
+
+form, form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    gap: 20px;
+}
+
+form div {
+    gap: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(178,178,178);
+    padding: 10px;
+    &:focus {
+        outline: none;
+    }
+}
+
+#enviar {
+    height: 45px;
+    border: unset;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: variables.$colorPrincipal;
+    cursor: pointer;
+    max-width: 400px;
+    width: 90vw;
+    align-self: center;
+    &:disabled {
+        background-color: rgba(156, 156, 156, 0.507);
+    }  
+}
+
+    .error {
+        color: red;
+    }

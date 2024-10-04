@@ -1,0 +1,64 @@
+@use "../../../../assets/styles/variables.scss";
+
+#container {
+    height: 80px;
+    display: flex;
+    background-color: variables.$colorPrincipal-claro;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#foto {
+    height: 100%;
+    background-size: cover;
+    flex: 1.5;
+    background-position: center;
+    max-width: 100px;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+
+    img {
+        height: 20px;
+        margin-bottom: 5px;
+        background-color: variables.$colorVerde;
+        border-radius: 50%;
+        &:first-child{
+            margin-left: 5px;
+        }
+    }
+    img#vegano {
+        border: 1px black solid;
+        height: 18px;
+    }
+}
+
+
+#detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex: 3;
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+ul li {
+    display: inline;
+    font-size: x-small;
+    &:not(:last-of-type)::after{
+        content: ",";
+        margin-left: -2px;
+    }
+}
+
+#precio {
+    text-align: end;
+    font-weight: bold;
+    font-size: small;
+}

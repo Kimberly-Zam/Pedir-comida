@@ -1,0 +1,20 @@
+div {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h3 {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}

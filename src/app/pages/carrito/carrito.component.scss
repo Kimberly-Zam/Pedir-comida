@@ -1,0 +1,160 @@
+@use "../../../assets/styles/variables.scss";
+
+.contenedor {
+    margin: 80px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaProductoContenedor {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    height: 15vh;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: variables.$colorPrincipal-claro;
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+}
+
+#izq {
+    width: 35%;
+    background-size: cover;
+    background-position: center;
+    >div {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        img {
+            height: 20px;
+            background-color: variables.$colorVerde;
+            border-radius: 50%;
+        }
+        #vegano {
+            border: black 1px solid;
+            height: 18px;
+            margin-right: 4px;
+        }
+    }
+}
+
+
+#cent {
+    width: 50%;
+    app-contador-cantidad {
+        width: 25vw;
+    }
+}
+
+#der {
+    width: 10%;
+    align-items: flex-end;
+}
+
+#borrar {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    padding: 0;
+}
+
+#mas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    a {
+        font-size: xx-large;
+        background-color: variables.$colorPrincipal-claro;
+        text-decoration: none;
+        font-weight: bolder;
+        color: black;
+        padding: 10px 20px 15px;
+        border-radius: 15px;
+    }
+}
+
+#detallesDireccion {
+	background-color: variables.$colorPrincipal-claro;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin-top: 5px;
+}
+
+#lapiz {
+    margin: 5px 10px;
+}
+
+.separar{
+    margin: 5px 0px;
+}
+
+#montos {
+    text-align: end;
+}
+
+#enviar {
+    background-color: variables.$colorPrincipal;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px 0 0;
+}
+
+#añadirProductos {
+    text-align: center;
+    margin: 100px auto 30px;
+    font-size: x-large;
+}
+dialog {
+    border: unset;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.156);
+    background-color: variables.$colorPrincipal-claro ;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    div {
+        display:flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        border-radius: 10px;
+        border: unset;
+        padding: 10px 5px;
+        &:first-of-type {
+            background-color: rgb(205, 252, 136);
+        }
+        &:last-of-type {
+            background-color: rgba(255, 0, 0, 0.356);
+        }
+        span {
+            font-size: x-large;
+        }
+    }
+    p {
+        font-size: x-large;
+    }
+}
+
+

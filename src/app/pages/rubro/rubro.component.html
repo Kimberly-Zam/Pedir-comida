@@ -1,0 +1,7 @@
+<section id="contenedorProductos">
+    <app-tarjeta-producto
+    *ngFor="let producto of productosArray()"
+    [productoInput]="producto"
+    [routerLink]="['/articulo', producto.id]"
+    ></app-tarjeta-producto>
+</section>

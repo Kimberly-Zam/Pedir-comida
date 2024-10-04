@@ -1,0 +1,15 @@
+<div id="container">
+    <div id="foto" [ngStyle]="{'background-image':'url('+productoInput.fotoUrl+')'}">
+        <img *ngIf="productoInput.esCeliaco" src="../../../../assets/icons/celiaco.png" alt="Apto Celiaco">
+        <img id="vegano" *ngIf="productoInput.esVegano" src="../../../../assets/icons/vegano.svg" alt="Apto Vegano">
+    </div>
+    <div id="detalles">
+        <h4>{{productoInput.nombre}}</h4>
+        <ul>
+            <li *ngFor="let ingrediente of productoInput.ingredientes">
+                {{ingrediente}}
+            </li>
+        </ul>
+        <p id="precio">${{productoInput.precio}}</p>
+    </div>
+</div>

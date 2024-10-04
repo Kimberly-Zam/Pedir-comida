@@ -1,0 +1,80 @@
+@use "../../../assets/styles/variables.scss";
+
+#fotoProductoContenedor {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#fotoProducto{
+    width: 90%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.margenPequeño {
+    margin: 0px 20px 20px;
+}
+
+ul {
+    margin-bottom: 10px;
+    li {
+        display: inline;
+        &:not(:last-of-type)::after{
+            content: ", ";
+            margin-left: 2px;
+        }
+    }
+}
+
+.aptoContenedor {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.apto {
+    height: 15px;
+    margin-right: 5px;
+}
+
+#esVegano {
+    border-radius: 100%;
+    border: black 1px solid;
+    height: 14px;
+}
+#cuadroNotas {
+    display: block;
+    margin: auto;
+    width: 97%;
+    border-radius: 5px;
+    background-color: variables.$colorPrincipal-claro;
+    border: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+#cantidadContenedor{
+    margin: 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 90%;
+    border-radius: 15px;
+    height: 40px;
+    font-size: large;
+    background-color: variables.$colorPrincipal;
+    display: block;
+    margin: auto;
+    border: 0px;
+    margin-bottom: 10px;
+}
+

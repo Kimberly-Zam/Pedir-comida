@@ -1,0 +1,65 @@
+@use "../../../assets/styles/variables.scss";
+
+#contenedor {
+    margin: 90px 10px 10px;
+}
+
+#barra-busqueda {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: variables.$colorPrincipal-claro;
+    padding: 10px;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    input {
+        width: 100%;
+        font-size: large;
+        border: unset;
+        background-color: variables.$colorPrincipal-claro;
+        padding: 5px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+#contenedorfiltros {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    height: 20px;
+}
+
+.aptoContenedor {
+    display: flex;
+    align-items: center;
+    input {
+        margin: 5px;
+    }
+}
+
+#veganoImagen {
+    border-radius: 100%;
+    border: black 1px solid;
+    height: 19px;
+}
+
+img {
+    height: 100%;
+}
+
+#contenedorProductos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    margin: 150px 20px;
+    text-align: center;
+    font-size: large;
+    color: grey;
+}

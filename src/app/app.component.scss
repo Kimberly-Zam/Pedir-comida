@@ -1,0 +1,15 @@
+#container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+app-taps{
+    margin-top: auto;
+}
+
+main {
+    flex: 1;
+    overflow-y: scroll;
+}

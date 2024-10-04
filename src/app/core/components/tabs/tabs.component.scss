@@ -1,0 +1,28 @@
+@use "../../../../assets/styles/variables.scss";
+
+#container {
+    display: flex;
+    justify-content:space-around;
+    border: 0px solid;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 65px;
+    background-color: rgba(219,219,219);
+}
+
+.tab {
+    display: 1;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    svg {
+        display: block;
+        margin: auto;
+        transition: 200ms ease-in-out;
+    }
+    transition: 200ms ease-in-out;
+}
+
+.seleccionado {
+    background-color: variables.$colorPrincipal;
+}
